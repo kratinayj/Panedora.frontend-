@@ -1,0 +1,6 @@
+*.json
+*.js
+*.cjs
+*.map
+*.ts
+*.md
