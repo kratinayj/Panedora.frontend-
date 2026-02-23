@@ -14,7 +14,6 @@ import img7 from './assets/tropic-fudge.png';
 import img8 from './assets/roasted-java-crunch.png';
 
 function App() {
-  // Your actual collection data, passed directly into the carousel
   const collectionData = [
     { name: "Rum-Berry Kiss", desc: "Juicy berries soaked in aged rum, folded into fudge brownies for a warming treat.", image: img1 },
     { name: "Biscoff Cheese Bliss", desc: "Cheesecake meets Biscoff atop a brownie base - a harmonious bite for pure happiness.", image: img2 },
@@ -33,7 +32,6 @@ function App() {
         <div className="nav-links"><span>EST. 2024 — MUMBAI</span></div>
       </nav>
 
-      {/* Hero Section */}
       <main className="hero" style={{ backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(${heroBg})` }}>
         <div className="hero-content">
           <img src={logo} alt="Panedora Hero" className="hero-logo" />
@@ -42,7 +40,6 @@ function App() {
         </div>
       </main>
 
-      {/* Our Story Section */}
       <section className="story-section">
         <div className="story-content">
           <h2 className="story-title">A Mumbai Legacy</h2>
@@ -53,17 +50,22 @@ function App() {
         </div>
       </section>
 
-      {/* The Custom Collection Carousel */}
       <CollectionCarousel items={collectionData} />
 
-      {/* Footer Section */}
       <footer className="footer">
         <div className="footer-content">
           <p className="footer-tagline">Gifts of Artisanal Bakes</p>
           <div className="social-links">
             <a href="https://www.instagram.com/panedora.co?igsh=cXJhMWh1bWpjbW8x" target="_blank" rel="noreferrer">Instagram</a>
             <span className="separator">|</span>
-            <a href="#" className="disabled-link">WhatsApp</a>
+            {/* The Updated WhatsApp Link is right here: */}
+            <a
+              href="https://wa.me/919321857448"
+              target="_blank"
+              rel="noreferrer"
+            >
+              WhatsApp
+            </a>
           </div>
           <p className="copyright">© 2026 PANEDORA MUMBAI</p>
         </div>
